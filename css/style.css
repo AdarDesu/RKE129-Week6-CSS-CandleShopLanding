@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Spectral:wght@300&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Spectral', serif;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.intro-image{
+    background-attachment: fixed;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background-position: bottom;
+}
+
+.intro-image__text a{
+    opacity: 0;
+    box-shadow: 0 0 1rem 1rem #97470050;
+    font-family: 'Tilt Prism', cursive;
+    background-color: #663c00bb;
+    border: 2px solid #b16400;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+    animation: spawn 1s linear forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes spawn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem 1rem #b99e0050;
+    background-color: #b39200bb;
+    border: 2px solid #ffd000;
+}
+
+.intro-image__text a:active{
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+.intro-text{
+    background-color: #301a07;
+    color: #c2b7ad;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 35%, 100% 80%, 0 100%, 0% 35%, 0 0);
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+}
+
+.intro-text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image{
+    background-attachment: fixed;
+    background-image: url("../img/img2.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text a{
+    box-shadow: 0 0 1rem 1rem #44362a50;
+    font-family: 'Tilt Prism', cursive;
+    background-color: #493726bb;
+    border: 2px solid #6e5743;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.packaging-image__text a:hover{
+    transform: scale(1.05);
+}
+
+.packaging-image__text a:active{
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+.packaging-text{
+    background-color: #554435;
+    color: #beb0b0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15rem;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
+.packaging_text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image{
+    background-attachment: fixed;
+    background-image: url("../img/img3.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 7%, 100% 90%, 0% 100%);
+    margin-bottom: -4rem;
+}
+
+.tutorials-image__text a{
+    box-shadow: 0 0 1rem 1rem #fff0d830;
+    font-family: 'Tilt Prism', cursive;
+    background-color: #cebda3bb;
+    border: 2px solid #ffebcb;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.tutorials-image__text a:hover{
+    transform: scale(1.05);
+}
+
+.tutorials-image__text a:active{
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+.tutorials-image__text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    background-color: #1e1e1e;
+    color: #9faab1;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    height: 200px;
+    animation: footercolor 20s infinite linear;
+}
+
+@keyframes footercolor{
+    0% {background-color: #808080;}
+    25% {background-color: #806060;}
+    50% {background-color: #608060;}
+    75% {background-color: #608080;}
+    100% {background-color: #808080;}
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.footer ul li:active{
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+.footer ul li a{
+    color: #9faab1;
+}
+
+.footer li a:hover{
+    color: whitesmoke;
+}
